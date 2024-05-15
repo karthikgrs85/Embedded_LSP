@@ -1,0 +1,26 @@
+Exercise 1: To change setting of other and group to only read and user to read, write and execute, what octal number would be used?
+
+Exercise 2.a: Write a brief explanation of the history of Linux and its philosophy.
+
+Action Items:
+
+Open a terminal.
+
+Use nano to create a .txt file named LinuxHistory.txt.
+
+Within the file, summarize the origins of Linux and the principles of the GNU/Linux system.
+
+Save and close the file.
+
+Exercise 2.b: Use Vim editor to open this file, make some changes, yank some text, paste, make some more changes, and save again.
+
+Exercise 3: List all files in the home directory using a single command.
+
+Display the absolute path of the current working directory.
+
+Create a new directory called Practice in the home directory and navigate into it.
+
+Exercise 4: Make some folder structure like this: home->Practice1->Temp1->Sample.txt
+Create a new file duplicate.txt with the following folder structure, and contents same as Sample.txt
+home->Practice2 ->Temp1>Folder1->duplicate.txt
+Delete folder Temp1 using rmdir and recursive delete (rm -r) and highlight the importance of both.

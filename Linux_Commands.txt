@@ -126,3 +126,6 @@ To paste, type p (Paste)
 4) Command Mode -> Type :. You can save using :w, quit using :q, override save using :q!
 To display line numbers use :set number
 To hide line numbers, use :set nonumber
+
+To redirect information from a file or a command use > <filename>
+
