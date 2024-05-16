@@ -56,10 +56,10 @@ drwxr-xr-x 4 user user 4 May 15 05:37 Wipro_Batch3
 To change setting of other and group to only read and user to read, write and execute, what octal number would be used?
 
 
-To create a file, you can use :
+To create a file, you can use touch filename
+You can also use:
 1. vi or vim filename
-2. touch filename
-3. nano filelanme
+2. nano filelanme
 to enter the data to a file and save it.
 
 To copy a file, use cp <source> <target>
