@@ -2,10 +2,13 @@ Linux commands:
 
 pwd (print working directory)
 Relative path ->
+. -> current directory
 ../ Go 1 directory out of the current directory
 ../<directory1> Go to directory1 1 level outside of the current dirctory
 ../../...n  Go to n levels outside the current directory
 
+<command> --help
+Get the usage help details for a command.
 man <command> 
 Display the linux manual for a command, including all parameters and ways in which it can be called.
 
@@ -53,7 +56,11 @@ drwxr-xr-x 4 user user 4 May 15 05:37 Wipro_Batch3
 To change setting of other and group to only read and user to read, write and execute, what octal number would be used?
 
 
-To create a file, use vi or vim command to enter the data to a file and save it.
+To create a file, you can use :
+1. vi or vim filename
+2. touch filename
+3. nano filelanme
+to enter the data to a file and save it.
 
 To copy a file, use cp <source> <target>
 source file will be copied to target name
@@ -118,14 +125,25 @@ world and Worlds.
 nano -> editor for creating and editing textual data in Linux
 vim -> more useful tool for creating and editing textual editor
 
-By default when you open in Vim
-1) Normal mode -> navigate to a line
-2) Insertion mode -> insert text into a file
-3) Visual mode -> To select text . To copy the selected text press y (Yank)
+By default when you open in Vim, it goes to normal mode
+1) Normal mode -> (when you open a file or press esc) navigate to a line
+2) Insertion mode -> (press i) insert text into a file
+3) Visual mode -> (press v) To select text . To copy the selected text press y (Yank)
 To paste, type p (Paste)
-4) Command Mode -> Type :. You can save using :w, quit using :q, override save using :q!
+4) Command Mode -> (press :). You can save using :w, quit using :q, override save using :q!
 To display line numbers use :set number
 To hide line numbers, use :set nonumber
 
+cat <filename>
+Display contents of file
+
 To redirect information from a file or a command use > <filename>
+~/Wipro_Batch3$ ls -ls
+total 3
+1 drwxr-xr-x 2 user user   2 May 15 05:37 Code
+1 drwxr-xr-x 2 user user   2 May 15 05:37 Linux_terminal
+1 -rw-r--r-- 1 user user 240 May 15 07:15 MusicAlbums.txt
+1 -rw-r--r-- 1 user user  95 May 15 08:05 Sample.txt
+~/Wipro_Batch3$ ls -ls > File_info.txt
+
 
