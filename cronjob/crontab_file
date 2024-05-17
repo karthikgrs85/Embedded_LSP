@@ -1,0 +1,5 @@
+SHELL=/bin/bash
+MAILTO=karthik.grs85@gmail.com
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin;
+
+30 15 * * * ~/Wipro/Scripts/CreateBackup.sh ~/Wipro ~/Backup
