@@ -1,0 +1,31 @@
+student-linux@karthiklinux-VirtualBox:~/Wipro$ awk '/[@]/{print $0}' someData.txt
+Mr. Raj Shekhar works as HR manager of a firm and can be reached @ raj.shekhar@gmail.com
+Another Sheela Pandit is a finance executive and can be reached at Sheela_pandit@msn.com
+Kumar Swamy: kumarswamy1@yahoo.com
+student-linux@karthiklinux-VirtualBox:~/Wipro$ awk '/HR/{print $0}' someData.txt
+Mr. Raj Shekhar works as HR manager of a firm and can be reached @ raj.shekhar@gmail.com
+student-linux@karthiklinux-VirtualBox:~/Wipro$ awk '{gsub(/[@]/"at")}{print}' someData.txt
+awk: cmd. line:1: {gsub(/[@]/"at")}{print}
+awk: cmd. line:1:                ^ 1 is invalid as number of arguments for gsub
+student-linux@karthiklinux-VirtualBox:~/Wipro$ awk '{gsub(/[@]/,"at")}{print}' someData.txt
+Here are some email addresses that I stored:
+Mr. Raj Shekhar works as HR manager of a firm and can be reached at raj.shekharatgmail.com
+Another Sheela Pandit is a finance executive and can be reached at Sheela_panditatmsn.com
+A few other details:
+Kumar Swamy: kumarswamy1atyahoo.com
+student-linux@karthiklinux-VirtualBox:~/Wipro$ awk '{gsub(/[@]/,"at")}{> someData1.txt}' someData.txt
+awk: cmd. line:1: {gsub(/[@]/,"at")}{> someData1.txt}
+awk: cmd. line:1:                    ^ syntax error
+student-linux@karthiklinux-VirtualBox:~/Wipro$ awk '{gsub(/[@]/,"at")}{print}' someData.txt > someData1.txt
+student-linux@karthiklinux-VirtualBox:~/Wipro$ cat someData1.txt
+Here are some email addresses that I stored:
+Mr. Raj Shekhar works as HR manager of a firm and can be reached at raj.shekharatgmail.com
+Another Sheela Pandit is a finance executive and can be reached at Sheela_panditatmsn.com
+A few other details:
+Kumar Swamy: kumarswamy1atyahoo.com
+student-linux@karthiklinux-VirtualBox:~/Wipro$ cat someData.txt
+Here are some email addresses that I stored:
+Mr. Raj Shekhar works as HR manager of a firm and can be reached @ raj.shekhar@gmail.com
+Another Sheela Pandit is a finance executive and can be reached at Sheela_pandit@msn.com
+A few other details:
+Kumar Swamy: kumarswamy1@yahoo.com

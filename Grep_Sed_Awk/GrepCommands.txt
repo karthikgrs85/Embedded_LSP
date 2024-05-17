@@ -1,0 +1,40 @@
+student-linux@karthiklinux-VirtualBox:~/Wipro$ cat Sample.txt
+This is a sample text file.
+Linux is an open source Operating System developed by Linus Tovardis.
+It provides advanced flexibility to control the system through terminal commands.
+It is free and works on a GNU license.
+Try it out! It is very easy to use once you get to know how to use it.
+student-linux@karthiklinux-VirtualBox:~/Wipro$ grep -ni Linux Sample.txt
+2:Linux is an open source Operating System developed by Linus Tovardis.
+student-linux@karthiklinux-VirtualBox:~/Wipro$ grep -ni "Linux|Linus" Sample.txt 
+student-linux@karthiklinux-VirtualBox:~/Wipro$ grep -ni -E "Linux|GNU" Sample.txt 
+2:Linux is an open source Operating System developed by Linus Tovardis.
+4:It is free and works on a GNU license.
+student-linux@karthiklinux-VirtualBox:~/Wipro$ grep -ni -E "Linux|GNU" -B 1 Sample.txt 
+1-This is a sample text file.
+2:Linux is an open source Operating System developed by Linus Tovardis.
+3-It provides advanced flexibility to control the system through terminal commands.
+4:It is free and works on a GNU license.
+student-linux@karthiklinux-VirtualBox:~/Wipro$ grep -ni -E "Linux|GNU" -A 1 Sample.txt 
+2:Linux is an open source Operating System developed by Linus Tovardis.
+3-It provides advanced flexibility to control the system through terminal commands.
+4:It is free and works on a GNU license.
+5-Try it out! It is very easy to use once you get to know how to use it.
+student-linux@karthiklinux-VirtualBox:~/Wipro$ grep -ni -E "Linux|GNU" -C 1 Sample.txt 
+1-This is a sample text file.
+2:Linux is an open source Operating System developed by Linus Tovardis.
+3-It provides advanced flexibility to control the system through terminal commands.
+4:It is free and works on a GNU license.
+5-Try it out! It is very easy to use once you get to know how to use it.
+student-linux@karthiklinux-VirtualBox:~/Wipro$ grep -iv -E "Linux|GNU" -C 1 Sample.txt 
+This is a sample text file.
+Linux is an open source Operating System developed by Linus Tovardis.
+It provides advanced flexibility to control the system through terminal commands.
+It is free and works on a GNU license.
+Try it out! It is very easy to use once you get to know how to use it.
+
+student-linux@karthiklinux-VirtualBox:~/Wipro$ grep -ni '@' someData.txt
+2:Mr. Raj Shekhar works as HR manager of a firm and can be reached @ raj.shekhar@gmail.com
+3:Another Sheela Pandit is a finance executive and can be reached at Sheela_pandit@msn.com
+5:Kumar Swamy: kumarswamy1@yahoo.com
+
